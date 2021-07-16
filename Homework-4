@@ -1,0 +1,14 @@
+For 1st question:
+SELECT DISTINCT replacement_cost from film;
+
+For 2nd question:
+SELECT COUNT (DISTINCT replacement_cost) from film;
+
+For 3rd question:
+SELECT COUNT(*) from film WHERE title LIKE 'T%' AND rating='G';
+
+For 4th question:
+SELECT COUNT(*) from country WHERE country LIKE '_____';
+
+For 5th question:
+SELECT COUNT(*) from city WHERE city ILIKE '%R';
