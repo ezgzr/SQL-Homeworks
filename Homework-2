@@ -1,5 +1,6 @@
 for 1st question:
-SELECT * from film WHERE replacement_cost BETWEEN 12.99 AND 16.99;
+SELECT * from film WHERE replacement_cost BETWEEN 12.99 AND 16.98;
+--16.98 because question says this replacement_cost value is smaller than 16.99
 
 for 2nd question:
 SELECT first_name, last_name from actor WHERE first_name IN ('Penelope', 'Nick', 'Ed');
