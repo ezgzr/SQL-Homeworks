@@ -1,17 +1,17 @@
-for 1st question:
+For 1st question:
 SELECT title, description from film; 
 
 For 2nd question:
 SELECT * from film WHERE length > 60 AND length <75; 
 
-for 3rd question:
+For 3rd question:
 SELECT * from film WHERE rental_rate = 0.99 AND (replacement_cost = 12.99 OR replacement_cost =28.99); 
 
-for 4th question:
+For 4th question:
 SELECT last_name from customer WHERE first_name = 'Mary';
 
-for 5th question:
+For 5th question:
 SELECT * from film WHERE NOT length > 50 AND NOT (rental_rate = 2.99 OR rental_rate = 4.99);
 
-for 5th question - an alternative way:
+For 5th question - an alternative way:
 SELECT * from film WHERE length <= 50 AND (rental_rate != 2.99 AND rental_rate != 4.99);
