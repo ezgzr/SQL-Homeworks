@@ -1,0 +1,11 @@
+For 1st question:
+SELECT rating, count(*) from film GROUP BY rating;
+
+For 2nd question:
+SELECT replacement_cost, count(*) from film GROUP BY replacement_cost HAVING count(*) > 50 ORDER BY count(*) DESC;
+
+For 3rd question:
+SELECT store_id, count(*) from customer GROUP BY store_id;
+
+For 4th question:
+SELECT country_id, count(*) from city GROUP BY country_id ORDER BY count(*) DESC LIMIT 1;
