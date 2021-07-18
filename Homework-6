@@ -1,0 +1,11 @@
+For 1st question:
+SELECT avg(rental_rate) from film;
+
+For 2nd question:
+SELECT count(*) from film WHERE title ILIKE 'C%';
+
+For 3rd question:
+SELECT max(length) from film WHERE rental_rate=0.99;
+
+For 4th question:
+SELECT COUNT(DISTINCT replacement_cost) from film WHERE length>150;
