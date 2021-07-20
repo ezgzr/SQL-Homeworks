@@ -1,0 +1,70 @@
+For 1st question:
+(
+SELECT first_name FROM actor
+)
+UNION
+(
+SELECT first_name FROM customer
+);
+
+
+For 2nd question:
+(
+SELECT first_name FROM actor
+)
+INTERSECT
+(
+SELECT first_name FROM customer
+);
+
+
+For 3rd question:
+(
+SELECT first_name FROM actor
+)
+EXCEPT
+(
+SELECT first_name FROM customer
+);
+
+
+For 4th question:
+
+
+(
+SELECT first_name FROM actor
+GROUP BY first_name
+HAVING COUNT(first_name) > 1
+)
+UNION ALL
+(
+SELECT first_name FROM customer
+GROUP BY first_name
+HAVING COUNT(first_name) > 1
+)
+
+
+(
+SELECT first_name FROM actor
+GROUP BY first_name
+HAVING COUNT(first_name) > 1
+)
+INTERSECT
+(
+SELECT first_name FROM customer
+GROUP BY first_name
+HAVING COUNT(first_name) > 1
+)
+
+
+(
+SELECT first_name FROM actor
+GROUP BY first_name
+HAVING COUNT(first_name) > 1
+)
+EXCEPT
+(
+SELECT first_name FROM customer
+GROUP BY first_name
+HAVING COUNT(first_name) > 1
+)
